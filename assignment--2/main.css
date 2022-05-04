@@ -71,7 +71,6 @@ input::-moz-focus-inner {
 
 .skill-bars {
   list-style: none;
-  margin: 6rem 0 3rem;
 }
 .skill-bars li {
   height: 0.6rem;
@@ -144,7 +143,7 @@ input::-moz-focus-inner {
   font-size: 3.6rem;
   color: #313131;
   line-height: 1.25;
-  margin-bottom: 1.2rem;
+  margin-bottom: 4rem;
 }
 .section-intro h5 {
   color: #ff0077;
@@ -235,9 +234,10 @@ input::-moz-focus-inner {
   float: left;
 }
 .intro-info .lead {
-  text-align: left;
-  padding-left: 1rem;
-  padding-top: 2rem;
+  font-size: larger;
+  text-align: right;
+  padding-left: 5rem;
+  padding-top: 3rem;
 }
 
 .about-content {
@@ -275,9 +275,6 @@ input::-moz-focus-inner {
   font-size: 1.5rem;
   line-height: 1;
 }
-.about-content .skill-bars {
-  margin-top: 6rem;
-}
 
 .button-section {
   text-align: center;
@@ -292,6 +289,9 @@ input::-moz-focus-inner {
 #resume {
   padding-top: 12rem;
   padding-bottom: 12rem;
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #resume .resume-header {
@@ -299,6 +299,7 @@ input::-moz-focus-inner {
 }
 #resume .resume-header h2 {
   color: #ff0077;
+  font-size: 20px;
 }
 
 #resume .resume-timeline {
@@ -396,4 +397,33 @@ input::-moz-focus-inner {
 .col-twelve,
 .col-full {
   width: 100%;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-grid img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+.image-grid div {
+  height: 20vh;
+  flex-grow: 1;
+}
+
+.image-grid div:last-child {
+  flex-grow: 10;
+}
+
+.skill-bars li strong {
+  margin-bottom: 5rem;
+}
+
+#white-images {
+  color: white;
 }
